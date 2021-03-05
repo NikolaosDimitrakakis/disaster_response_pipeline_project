@@ -8,7 +8,6 @@ A Dashboard to classify messages related to disasters
  3. [File Descriptions](#files)
  4. [Execution](#execution)
  5. [Licensing, Authors, and Acknowledgements](#licensing)
- 6. [CRISP-DM process](#CRISP-DM)
 
 ## Installation <a name="installation"></a>
 
@@ -22,8 +21,9 @@ The project scope is to build a Natural Language Processing Model to categorize 
 
 There are 3 files available here with work related to the project.  Each of the files is a key to run the dashboard.  Markdown cells were used to assist in walking through the thought process for individual steps.
 In the app file are all the needed templates to run a web app to show us the model results in real time.
-In the data file we have all the information including one notebook for processing the data, building the ETL pipeline to extract the data, clean and save them in SQLite DB.
-In the model file we build the machine learning pipeline to load the data, train a model, and save the trained model as .pkl file.   
+In the data file we have all the information for processing the data, building the ETL pipeline to extract the data, clean and save them in SQLite DB.
+In the model file we build the machine learning pipeline to load the data, train a model, and save the trained model as .pkl file.
+There are two notebooks where we created the ETL pipeline and the model we used for the app.
 
 ## Execution<a name="execution"></a>
 
