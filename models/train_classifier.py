@@ -34,7 +34,7 @@ def load_data(database_filepath):
        X (DataFrame) : Message features dataframe
        Y (DataFrame) : Target dataframe
     """
-    engine = create_engine('sqlite:///disaster_response.db')
+    engine = create_engine(f"sqlite:///{database_filepath}")
     df = pd.read_sql_table('disaster_response', engine)
     X = df['message']
     Y = df.drop(['message', 'id', 'original', 'genre'], axis=1)
