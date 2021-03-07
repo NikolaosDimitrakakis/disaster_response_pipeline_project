@@ -51,6 +51,8 @@ def clean_data(df):
     df = pd.concat([df, categories], axis=1)
     # drop duplicates
     df = df.drop_duplicates()
+    # drop values with 2 in related column
+    df = df.drop(df[df['related'] == 2].index)
     return df
 
 
@@ -63,7 +65,7 @@ def save_data(df, database_filename):
      database_filename (str): The file name of the database
   """
   engine = create_engine('sqlite:///'+database_filename)
-  df.to_sql('disaster_response', engine, index=False)
+  df.to_sql('disaster_response', engine, index=False, if_exists='replace')
   
 
 
