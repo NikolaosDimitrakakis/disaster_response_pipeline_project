@@ -17,7 +17,7 @@ For the project we used Machine Learning libraries(NumPy, SciPy, Pandas, Sciki-L
 
 The project scope is to build a Natural Language Processing Model to categorize messages on real time basis. The dataset contains pre-labelled tweets and messages from real-life disaster events and is preprocessed by Figure Eight.
 
-You can find the app [here](https://dashdisaster.herokuapp.com/)
+You can find the app [here](https://dashdisaster.herokuapp.com/).
 
 ## File Descriptions <a name="files"></a>
 
